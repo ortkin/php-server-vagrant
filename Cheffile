@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+site 'http://community.opscode.com/api/v1'
+cookbook 'apache2'
+cookbook 'apt'
+cookbook 'chef-php',
+	:git => 'https://github.com/priestjim/chef-php'
+cookbook 'mysql'
+cookbook 'openssl'
+cookbook 'PHP_server',
+  :git => 'https://github.com/ortkin/chef-PHP_server.git'
+cookbook 'phpmyadmin',
+	:git => 'git://github.com/priestjim/chef-phpmyadmin.git'
